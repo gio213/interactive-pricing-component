@@ -4,9 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Interactive pricing component</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon-32x32.png" />
   </head>
-  <body></body>
+  <body>
+    <div class="headingDiv">
+      <img class="bodyImg" src="images/bg-pattern.svg" alt="bg-pattern" />
+      <img class="bodyImg2" src="images/pattern-circles.svg" alt="circles" />
+      <div class="headingText">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial.</p>
+        <p>No credit card required.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="middleDiv">
+        <p>100K PAGEVIEWS</p>
+        <div class="test">
+          <input
+            type="range"
+            min="0"
+            max="5"
+            class="slider"
+            id="myRange"
+            value=""
+          />
+        </div>
+        <div class="moneyMonth">
+          <h3>$16.00</h3>
+          <h2>/ month</h2>
+        </div>
+      </div>
+      <div class="montlyBilling">
+        <h4>Monthly Billing</h4>
+
+        <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+        <h4>Yearly Billing</h4>
+        <div class="percentDiv">
+          <h5>-25%</h5>
+        </div>
+      </div>
+      <div class="lastDiv">
+        <div class="finalDiv">
+          <div class="lastDivSubDivs">
+            <img src="images/icon-check.svg" alt="check icon" />
+            <h4>Unlimited websites</h4>
+          </div>
+          <div class="lastDivSubDivs">
+            <img src="images/icon-check.svg" alt="check icon" />
+            <h4>100% data ownership</h4>
+          </div>
+          <div class="lastDivSubDivs">
+            <img src="images/icon-check.svg" alt="check icon" />
+            <h4>Email reports</h4>
+          </div>
+        </div>
+        <div class="btn">
+          <button><h6>Start my trial</h6></button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

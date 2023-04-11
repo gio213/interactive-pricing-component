@@ -1,0 +1,391 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.bodyImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 0px 191.5px;
+  background: #f1f5fe;
+  position: relative;
+}
+
+.bodyImg2 {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27.32px;
+  color: #293356;
+}
+p {
+  font-family: Manrope;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 23px;
+  color: #848ead;
+  font-style: normal;
+}
+
+.headingDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+}
+
+.headingText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 85%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+  border-radius: 8px;
+  position: absolute;
+  top: 35%;
+  padding: 3%;
+  gap: 2rem;
+}
+
+.container p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+  color: #848ead;
+}
+
+.middleDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+.test {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #a4f3eb;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: 6px 13px;
+  background: #10d8c4;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  cursor: pointer;
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: 6px 13px;
+  background: #10d8c4;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  cursor: pointer;
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: #24aea1;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+}
+
+.moneyMonth {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: right;
+  letter-spacing: -0.8px;
+  color: #293356;
+}
+
+h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #848ead;
+}
+
+.montlyBilling {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #848ead;
+}
+
+h5 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 14px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ff8d68;
+}
+.percentDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  background: #feede8;
+  border-radius: 9.5px;
+  text-align: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 43px;
+  height: 22px;
+  background: #cfd8ef;
+  border-radius: 15px;
+  display: block;
+
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #7aeadf;
+  border-radius: 15px;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.lastDiv {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #ecf0fb;
+  background: white;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+  box-sizing: border-box;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.lastDivSubDivs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h6 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #becdff;
+}
+
+.btn {
+  display: flex;
+  width: 75%;
+  height: 20%;
+  justify-content: center;
+}
+
+button {
+  background: #293356;
+  border-radius: 20.5px;
+  width: 50%;
+  height: 100%;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.lastDiv img {
+  width: 4%;
+  height: 5%;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid #ecf0fb;
+}
+
+.finalDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 40%;
+    height: fit-content;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem 2rem;
+    gap: 2rem;
+  }
+  .middleDiv {
+    height: 100%;
+  }
+  .lastDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    gap: 0;
+  }
+  .lastDivSubDivs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .finalDiv {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  .lastDiv img {
+    width: 10%;
+    height: 3%;
+  }
+  .btn {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+}
