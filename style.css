@@ -69,7 +69,7 @@ p {
   border-radius: 8px;
   position: absolute;
   top: 35%;
-  padding: 3%;
+
   gap: 2rem;
 }
 
@@ -92,9 +92,13 @@ p {
   gap: 2rem;
   justify-content: center;
   text-align: center;
+  padding: 0.5rem;
 }
 .test {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
 }
 
 .slider {
@@ -184,6 +188,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  padding: 0 0.5rem;
 }
 
 h4 {
@@ -283,6 +288,7 @@ input:checked + label:after {
   box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
   box-sizing: border-box;
   gap: 1rem;
+  border-radius: 8px;
   padding-bottom: 0.5rem;
 }
 
@@ -342,11 +348,10 @@ button {
 
 @media only screen and (min-width: 1024px) {
   .container {
-    width: 40%;
+    width: 30%;
     height: fit-content;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 2rem 2rem;
     gap: 2rem;
   }
   .middleDiv {
@@ -387,5 +392,8 @@ button {
     height: fit-content;
     display: flex;
     justify-content: center;
+  }
+  .test {
+    width: 100%;
   }
 }
