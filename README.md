@@ -1,4 +1,5 @@
 # Frontend Mentor - Interactive pricing component
+https://gio213.github.io/interactive-pricing-component/
 
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
 
